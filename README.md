@@ -8,7 +8,10 @@ Bert-server と Faiss を利用した大規模データ（spam-mail text）の�
 
 ## Faiss
 
-Fast large-scale KNN or k-means-clustering for Bilion target
+A library for efficient similarity search and clustering of dense vectors.
+
+Super fast k-means KNN can be used with python on CPU / GPU machines.
+
 
 install
 ```
