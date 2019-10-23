@@ -4,11 +4,17 @@ Large scale Spam-mails clustering k-means with Faiss for milion text-dataset
 
 ----
 
-
 ## Faiss
 
 Fast large-scale KNN or k-means-clustering for Bilion target
 
+install
+```
+pip faiss-cpu
+or
+pip faiss-gpu
+
+```
 
 ## Bert-server
 
@@ -21,7 +27,11 @@ install
 ```
 pip install bert-serving-server
 pip install bert-serving-client
+
+pip install tensorflow-cpu 　
+or 
 pip install tensorflow-gpu 　
+
 ```
 
 ## Get pre-trainded model　(Japanese) 
