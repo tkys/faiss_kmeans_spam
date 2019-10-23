@@ -2,6 +2,9 @@
 
 Large scale Spam-mails clustering k-means with Faiss for milion text-dataset
 
+----
+
+
 ## Faiss
 
 Fast large-scale KNN or k-means-clustering for Bilion target
@@ -57,11 +60,13 @@ bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_wo
 Every time bert-serv starts, new tmpABCDE files are created. 
 
 <b>For data disk capacity, when if you stop the process, delete the tmpABCDE files.</b> 
---------
+
+----
+
 
 ## Input text
 
-/input.csv (sample
+input_text
 ```
 日頃よりご利用ありがとうございます。\n至急お伝えせねばならない事があります為、下記よりご確認ください。\nhttp://abcsefg.com
 現在ご利用されている端末以外で、@docomo.ne.jpでご利用中アカウントへのログインされました。\n身に覚えがない場合には下記より停止をご確認ください。\n↓詳細確認↓\nabcsefg.com\n▼ログイン必要情報▼
