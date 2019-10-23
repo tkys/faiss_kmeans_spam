@@ -1,6 +1,6 @@
 # faiss_kmeans_spam
 
-large-scale spam-mail kmeans clustering with FAaiss for milion text-dataset
+Large scale Spam-mails clustering k-means with Faiss for milion text-dataset
 
 ## Faiss
 Fast large-scale KNN or k-means-clustering for Bilion target
