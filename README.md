@@ -1,6 +1,7 @@
 # faiss_kmeans_spam
 
-Large scale Spam-mails clustering k-means with Faiss for milion text-dataset
+High-speed clustering of large-scale data (spam-mail text) using Bert-server and Faiss
+Bert-server と Faiss を利用した大規模データ（spam-mail text）の高速クラスタリング
 
 ----
 
