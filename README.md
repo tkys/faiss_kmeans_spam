@@ -16,13 +16,20 @@ pip install bert-serving-client
 pip install tensorflow-gpu 　
 ```
 
-## Get the Japanese pre-trainded model and unzip under the '/model' directory
+## Get pre-trainded model　(Japanese) 
+
+and unzip under the '/models' directory
 
 LINK:
 http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi?down=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/JapaneseBertPretrainedModel/Japanese_L-12_H-768_A-12_E-30_BPE.zip&name=Japanese_L-12_H-768_A-12_E-30_BPE.zip
 
 ```
-./model/Japanese_L-12_H-768_A-12_E-30_BPE/
+mkdir ./models
+cd ./models
+wget http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi?down=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/JapaneseBertPretrainedModel/Japanese_L-12_H-768_A-12_E-30_BPE.zip&name=Japanese_L-12_H-768_A-12_E-30_BPE.zip
+unzip ./Japanese_L-12_H-768_A-12_E-30_BPE.zip
+
+ls -al ./Japanese_L-12_H-768_A-12_E-30_BPE/
 
 bert_config.json
 bert_model.ckpt.data-00000-of-00001
@@ -37,7 +44,7 @@ vocab.txt
 ## Start bert-server
 
 ```
-bert-serving-start -model_dir ./models/multi_cased_L-12_H-768_A-12 -num_worker=2
+bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_worker=2
 ```
 
 ### ※
