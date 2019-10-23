@@ -3,11 +3,16 @@
 Large scale Spam-mails clustering k-means with Faiss for milion text-dataset
 
 ## Faiss
+
 Fast large-scale KNN or k-means-clustering for Bilion target
 
+
 ## Bert-server
+
 Use for text embedding (CPU/GPU)
+
 dim =768
+
 
 install
 ```
@@ -19,6 +24,7 @@ pip install tensorflow-gpu 　
 ## Get pre-trainded model　(Japanese) 
 
 and unzip under the '/models' directory
+
 
 LINK:
 http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi?down=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/JapaneseBertPretrainedModel/Japanese_L-12_H-768_A-12_E-30_BPE.zip&name=Japanese_L-12_H-768_A-12_E-30_BPE.zip
@@ -49,4 +55,5 @@ bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_wo
 
 ### ※
 Every time bert-serv starts, new tmpABCDE files are created. 
-For data disk capacity, when if you stop the process, delete the tmpABCDE files. 
+
+<b>For data disk capacity, when if you stop the process, delete the tmpABCDE files.</b> 
