@@ -10,7 +10,7 @@ Bert-server と Faiss を利用した大規模データ（spam-mail text）の�
 
 A library for efficient similarity search and clustering of dense vectors.
 
-Super fast k-means KNN can be used with python on CPU / GPU machines.
+Super fast k-means / KNN can be used with python on CPU / GPU machines.
 
 
 install
