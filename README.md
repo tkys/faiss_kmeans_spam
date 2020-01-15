@@ -68,7 +68,7 @@ vocab.txt
 ## Start bert-server
 
 ```
-bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_worker=2
+bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_worker=2  -max_seq_len=300
 ```
 
 ### ※
