@@ -25,7 +25,7 @@ pip faiss-gpu
 
 Use for text embedding (CPU/GPU)
 
-dim =768
+埋め込み次元　dim =768
 
 
 install
@@ -38,6 +38,14 @@ or
 pip install tensorflow-gpu 　
 
 ```
+
+
+その他 requirements.txtを一括インストール
+
+```
+pip install -r requirements.txt
+```
+
 
 ## Get pre-trainded model　(Japanese) 
 
@@ -81,9 +89,8 @@ Every time bert-serv starts, new tmpABCDE files are created.
 
 ## Input text
 
-input_text.csv
+input_text.csv　を用意する。（columns = '本文'のみ）
 
-columns = '本文'
 ```
 本文
 日頃よりご利用ありがとうございます。\n至急お伝えせねばならない事があります為、下記よりご確認ください。\nhttp://abcsefg.com
