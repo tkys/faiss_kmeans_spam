@@ -65,7 +65,7 @@ print(index.is_trained)
 start = time.time() # 時間計測
 
 # k クラスタ数
-ncentroids =  sys.argv[3]
+ncentroids =  int(sys.argv[3])
 
 # イテレーション 試行回数
 niter =  20 
