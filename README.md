@@ -101,12 +101,15 @@ python encode_text_spam.py  ./path/to/input_text.csv  # or .xlsx
 ```
 
 
-## Clustering Faiss
-```
-python faiss_clustering_spam_mail.py　{/path/to/text_vecs.csv} {./path/to/input_text.csv} {cluster_number}
+## Clustering with Faiss
 
-example.
-python faiss_clustering_spam_mail.py　text_vecs.csv input_text.csv 100  # cluster_number K=100
+text_vecs.csvを cluster_number(k)でクラスタ化し、input_text.csv（元のRAWテキスト）と結合
+
+```
+python faiss_clustering_spam_mail.py　{/path/to/text_vecs.csv} {/path/to/input_text.csv} {cluster_number}
+
+#example. # cluster_number K=100
+python faiss_clustering_spam_mail.py　text_vecs.csv input_text.csv 100  
 
 >>> df_result.csv  is generated
 ```
