@@ -103,12 +103,12 @@ python encode_text_spam.py  ./path/to/input_text.csv  # or .xlsx
 
 ## Clustering with Faiss
 
-text_vecs.csvを cluster_number(k)でクラスタ化し、input_text.csv（元のRAWテキスト）と結合
+text_vecs.csvを K-meansクラスタ化し、input_text.csv（元のRAWテキスト）と結合
 
 ```
-python faiss_clustering_spam_mail.py　{/path/to/text_vecs.csv} {/path/to/input_text.csv} {cluster_number}
+python faiss_clustering_spam_mail.py　{/path/to/text_vecs.csv} {/path/to/input_text.csv} {Number of clusters}
 
-#example. # cluster_number K=100
+#example. # Number of clusters 'K'=100
 python faiss_clustering_spam_mail.py　text_vecs.csv input_text.csv 100  
 
 >>> df_result.csv  is generated
