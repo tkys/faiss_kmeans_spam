@@ -108,7 +108,7 @@ python faiss_clustering_spam_mail.py　{/path/to/text_vec.csv} {./path/to/input_
 example.
 python faiss_clustering_spam_mail.py　./text_vec.csv ./input_text.csv 100  #K=100
 
->>> df_result.csv text_vecs.csv is generated
+>>> df_result.csv  is generated
 ```
 
 
