@@ -81,8 +81,11 @@ Every time bert-serv starts, new tmpABCDE files are created.
 
 ## Input text
 
-input_text
+input_text.csv
+
+columns = '本文'
 ```
+本文
 日頃よりご利用ありがとうございます。\n至急お伝えせねばならない事があります為、下記よりご確認ください。\nhttp://abcsefg.com
 現在ご利用されている端末以外で、@docomo.ne.jpでご利用中アカウントへのログインされました。\n身に覚えがない場合には下記より停止をご確認ください。\n↓詳細確認↓\nabcsefg.com\n▼ログイン必要情報▼
 :
@@ -93,6 +96,19 @@ input_text
 ## Get word-vector
 ```
 python encode_text_spam.py  ./path/to/input_text.csv  # or .xlsx
+
+>>> text_vecs.csv is generated
+```
+
+
+## Clustering Faiss
+```
+python faiss_clustering_spam_mail.py　{/path/to/text_vec.csv} {./path/to/input_text.csv} {cluster_number}
+
+example.
+python faiss_clustering_spam_mail.py　./text_vec.csv ./input_text.csv 100  #K=100
+
+>>> df_result.csv text_vecs.csv is generated
 ```
 
 
