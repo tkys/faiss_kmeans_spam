@@ -40,7 +40,7 @@ pip install tensorflow-gpu 　
 ```
 
 
-その他 requirements.txtを一括インストール
+その他 requirements.txt　で一括インストール
 
 ```
 pip install -r requirements.txt
