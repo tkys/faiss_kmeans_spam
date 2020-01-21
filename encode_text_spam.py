@@ -29,13 +29,14 @@ df = df[['index','本文']]  #カラム名'本文'
 #df = df.replace('[︰-＠]', "",regex=True) #全角記号
 
 df = df.replace( ' ',   '', regex=True) #スペース消しておく
-df = df.replace( '\n', '-', regex=True) #空メールむけ対応　#改行のみメール # bert-server　でテキスト無しは受け付けない為とりあえず-へ　 
+df = df.replace( '\n', '-', regex=True) #改行置換　改行のみメールも対応 # bert-server　でテキスト無しは受け付けない為とりあえず-へ　 
 df = df.replace( '',   '-', regex=True) #空メールむけ対応　#空のメール # bert-server　でテキスト無しは受け付けない為とりあえず-へ
 
 
 #print('isnull =:',df.isnull())  # nullチェック
 
 #df  = df.dropna()
+df  = df.fillna('-') # Nan 対応 '-'へ
 
 #index_list = df['index']
 
