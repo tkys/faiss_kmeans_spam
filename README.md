@@ -55,6 +55,8 @@ and unzip under the '/models' directory
 LINK:
 http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi?down=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/JapaneseBertPretrainedModel/Japanese_L-12_H-768_A-12_E-30_BPE.zip&name=Japanese_L-12_H-768_A-12_E-30_BPE.zip
 
+$ wget http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/JapaneseBertPretrainedModel/Japanese_L-12_H-768_A-12_E-30_BPE.zip&name=Japanese_L-12_H-768_A-12_E-30_BPE.zip
+
 ```
 mkdir ./models
 cd ./models
@@ -83,6 +85,10 @@ bert-serving-start -model_dir ./models/Japanese_L-12_H-768_A-12_E-30_BPE -num_wo
 Every time bert-serv starts, new tmpABCDE files are created. 
 
 <b>For data disk capacity, when if you stop the process, delete the tmpABCDE files.</b> 
+
+or 
+
+-graph_tmp_dir /path/to/dir
 
 ----
 
